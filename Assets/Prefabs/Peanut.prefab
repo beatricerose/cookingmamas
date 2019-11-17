@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6322201566155451615}
   - component: {fileID: 6322201566155451584}
   - component: {fileID: 6322201566155451585}
+  - component: {fileID: 2880549681706303189}
   m_Layer: 0
   m_Name: Peanut
   m_TagString: Untagged
@@ -4362,3 +4363,17 @@ MonoBehaviour:
   - a: 68
     b: 66
   m_SelectedVertices: 420000004300000044000000
+--- !u!64 &2880549681706303189
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6322201566155451586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
