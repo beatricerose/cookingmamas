@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class spoon : MonoBehaviour
 {
-    bool turn;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,16 +20,9 @@ public class spoon : MonoBehaviour
 
     private void OnMouseDown()
     {
-      
 
-        
-            turn = true;
-            if (turn == true)
-            {
-                Vector3 rotation = new Vector3(0, 360, 0);
-                transform.Rotate(rotation);
-            }
-            turn = false;
+        anim.SetTrigger("Active");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        
+    }
 }
