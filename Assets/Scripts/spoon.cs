@@ -18,7 +18,7 @@ public class spoon : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
+     void OnMouseUp()
     {
 
         anim.SetTrigger("Active");
