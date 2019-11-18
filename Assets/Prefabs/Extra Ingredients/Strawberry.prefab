@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5789643266064555629}
   - component: {fileID: 5709799138619857212}
   - component: {fileID: 253518406396656206}
+  - component: {fileID: -2724882939913784534}
   m_Layer: 0
   m_Name: Strawberry
   m_TagString: Untagged
@@ -2314,3 +2315,17 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!64 &-2724882939913784534
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142405765675502931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
