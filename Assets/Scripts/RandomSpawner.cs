@@ -35,9 +35,9 @@ public class RandomSpawner : MonoBehaviour
         //spawnPosition += new Vector3(Random.Range(-Screen.width, Screen.width), 0, 0);
         spawnPosition += new Vector3(Random.Range(-spawnWidth, spawnWidth), 0, 0);
         GameObject copyfood = Instantiate(sprite, spawnPosition, Quaternion.identity);
-        Rigidbody rb2d = copyfood.GetComponent<Rigidbody>();
+        //Rigidbody rb2d = copyfood.GetComponent<Rigidbody>();
 
-        rb2d.velocity = new Vector3(1, 1,1) * 5;
+        //rb2d.velocity = new Vector3(1, 1,1) * 5;
         //destory(copyfood);
 
         startnext = true;
