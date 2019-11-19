@@ -14,6 +14,8 @@ public class Collection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
@@ -28,7 +30,8 @@ public class Collection : MonoBehaviour
     {
         if (other.CompareTag("Flour"))
         {
-            print("hi");
+            Destroy(other.gameObject);
         }
+        
     }
 }

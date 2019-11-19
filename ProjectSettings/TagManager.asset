@@ -8,9 +8,13 @@ TagManager:
   - Flour
   - Sugar
   - Egg
+<<<<<<< Updated upstream
   - Chocolate
   - Extra
   - Bad
+=======
+  - Bowl
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
