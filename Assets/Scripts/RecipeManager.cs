@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Ingredient
+{
+    Flour,
+    Sugar,
+    Butter,
+    Egg
+}
+
+// Look into scriptable object
+
 public class RecipeManager : MonoBehaviour
 {
     public static RecipeManager instance;
@@ -19,8 +29,11 @@ public class RecipeManager : MonoBehaviour
     private int myChocolate = 0;
     private int mySpecial;
 
+    Dictionary<Ingredient, int> cookieRecipe = new Dictionary<Ingredient, int>();
+
     private void Awake()
     {
+        cookieRecipe.Add(Ingredient.Butter, 2);
         instance = this;
     }
 
