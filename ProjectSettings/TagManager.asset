@@ -8,6 +8,9 @@ TagManager:
   - Flour
   - Sugar
   - Egg
+  - Chocolate
+  - Extra
+  - Bad
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 244764812508040359}
   m_Layer: 0
   m_Name: Salt
-  m_TagString: Untagged
+  m_TagString: Extra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

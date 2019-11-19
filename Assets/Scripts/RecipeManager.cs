@@ -83,6 +83,7 @@ public class RecipeManager : MonoBehaviour
         if (myFlour >= totalFlour && mySugar >= totalSugar && myEgg >= totalEgg && myButter >= totalButter && myChocolate >= totalChocolate)
         {
             // run the animation, load next scene
+            // make spoon clickable? ie. toggle the kinetic to make it clickable 
         }
     }
 
