@@ -4,17 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Butter
-  - Flour
-  - Sugar
-  - Egg
-<<<<<<< Updated upstream
-  - Chocolate
-  - Extra
-  - Bad
-=======
   - Bowl
->>>>>>> Stashed changes
+  - Flour
   layers:
   - Default
   - TransparentFX
