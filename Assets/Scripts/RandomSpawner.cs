@@ -28,7 +28,7 @@ public class RandomSpawner : MonoBehaviour
         Vector3 spawnPosition = transform.position;
         spawnPosition += new Vector3(Random.Range(-spawnWidth, spawnWidth), 0, 0);
         GameObject copyfood = Instantiate(sprite, spawnPosition, Quaternion.identity);
-        
+        //spawn.rotate(vector3.forward * -90f)
         
 
         startnext = true;
