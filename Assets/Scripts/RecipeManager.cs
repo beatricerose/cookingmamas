@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RecipeManager : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class RecipeManager : MonoBehaviour
     {
         if (item.CompareTag("Peanut"))
         {
-            // death scene --> YOU KILLED SOMEONE
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else if (item.CompareTag("Flour"))
         {
@@ -64,7 +65,7 @@ public class RecipeManager : MonoBehaviour
         }
         else if(Flour.flourAmount < 0 || Sugar.sugarAmount < 0 || Butter.butterAmount < 0 || Chocolate.chocolateAmount < 0)
         {
-            // RESET SCENE
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

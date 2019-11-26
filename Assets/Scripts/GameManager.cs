@@ -8,7 +8,7 @@ using System; //This allows the IComparable Interface
 public class GameManager : MonoBehaviour
 {
     public static string prevScene;
-    private List<Recipe> recipeList;
+    private Recipe[] recipeList;
 
     public void SetPrevScene(string name)
     {
@@ -28,11 +28,12 @@ public class GameManager : MonoBehaviour
 
     public void CreateSet()
     {
+        // flour, sugar, butter, chocolate
         Recipe cookie = new Recipe(1, 2, 3, 4);
         Recipe cake = new Recipe(1, 2, 3, 4);
         Recipe bread = new Recipe(1, 2, 3, 4);
-        recipeList.Add(cookie);
-        recipeList.Add(cake);
-        recipeList.Add(bread);
+        recipeList[0] = cookie;
+        recipeList[1] = cake;
+        recipeList[2] = bread;
     }
 }
