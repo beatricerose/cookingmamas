@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Bowl
   - Flour
+  - Bad
+  - Egg
+  - Extra
+  - Chocolate
+  - Sugar
+  - Butter
+  - Peanut
   layers:
   - Default
   - TransparentFX

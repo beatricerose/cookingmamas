@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2880549681706303189}
   m_Layer: 0
   m_Name: Peanut
-  m_TagString: Bad
+  m_TagString: Peanut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
