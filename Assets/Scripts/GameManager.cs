@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System; //This allows the IComparable Interface
+
 
 public class GameManager : MonoBehaviour
 {
     public static string prevScene;
-    public ArrayList recipeSet;
+    private List<Recipe> recipeList;
 
     public void SetPrevScene(string name)
     {
@@ -18,21 +20,19 @@ public class GameManager : MonoBehaviour
         return prevScene;
     }
 
-    public void sendRecipe()
+    public void SendRecipe()
     {
-        int sceneIndex = SceneManager.getActiveScene().buildIndex;
-        RecipeManager.setRecipe(recipeSet.get(sceneIndex + 1));
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        RecipeManager.SetRecipe(recipeList.Item(sceneIndex));
     }
 
-    public void recipeCreate()
+    public void CreateSet()
     {
-
-        int[] cookie = { 1, 2, 3 , 4};
-        int[] chocolateCake = { 1, 2, 3, 4};
-        int[] croissant = { 1, 2, 3, 4};
-        //int[] = { 1, 2, 3 , 4, 5, 6};
-        recipeSet.Add(cookie);
-        recipeSet.Add(chocolateCake);
-        recipeSet.Add(croissant);
+        Recipe cookie = new Recipe(1, 2, 3, 4);
+        Recipe cake = new Recipe(1, 2, 3, 4);
+        Recipe bread = new Recipe(1, 2, 3, 4);
+        recipeList.Add(cookie);
+        recipeList.Add(cake);
+        recipeList.Add(bread);
     }
 }

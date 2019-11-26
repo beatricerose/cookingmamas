@@ -2,21 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Ingredient
-{
-    Flour,
-    Sugar,
-    Butter,
-    Egg
-}
-
-// Look into scriptable object
-
 public class RecipeManager : MonoBehaviour
 {
     public static RecipeManager instance;
-
-    //Dictionary<Ingredient, int> cookieRecipe = new Dictionary<Ingredient, int>();
 
     private void Awake()
     {
@@ -80,13 +68,11 @@ public class RecipeManager : MonoBehaviour
         }
     }
 
-    public void setRecipe(int[] recipe)
+    public void SetRecipe(Recipe myRecipe)
     {
-        Flour.flourAmount = recipe[0];
-        Sugar.sugarAmount = recipe[1];
-        Butter.butterAmount = recipe[2];
-        //totalEgg = recipe[3];
-        Chocolate.chocolateAmount = recipe[3];
-        //totalSpecial = recipe[5];
+        Flour.flourAmount = myRecipe.flour;
+        Sugar.sugarAmount = myRecipe.sugar;
+        Butter.butterAmount = myRecipe.butter;
+        Chocolate.chocolateAmount = myRecipe.chocolate;
     }
 }
