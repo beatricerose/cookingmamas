@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Flour : MonoBehaviour
+public class Butter : MonoBehaviour
 {
     Text text;
-    public static int flourAmount = 5;
+    public static int butterAmount = 4;
 
     void Start()
     {
@@ -16,8 +16,6 @@ public class Flour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = flourAmount.ToString();
+        text.text = butterAmount.ToString();
     }
-
-
 }
