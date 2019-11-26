@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2751837028547836579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.7635, y: 1.8, z: -6.7265}
-  m_LocalScale: {x: 0.31131, y: 0.31131, z: 0.31131}
+  m_LocalScale: {x: 0.12280944, y: 0.12280944, z: 0.12280944}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -599,9 +599,17 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 03000000
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 0
+  - a: 0
+    b: 0
+  - a: 0
+    b: 0
+  - a: 0
+    b: 0
+  m_SelectedVertices: 03000000000000000000000000000000
 --- !u!64 &2751837028547836572
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -36,7 +36,7 @@
                 
 
                 vOutput.position = mul(unity_ObjectToWorld, vInput.position); 
-                vOutput.position.y += sin(_Time[1] + vOutput.position.x ) * .3;
+                vOutput.position.y += sin(_Time[1] + vOutput.position.x ) * .1;
                
                 vOutput.position = mul(UNITY_MATRIX_V, vOutput.position);
                 
