@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using System;
 
 public class RandomSpawner : MonoBehaviour
 {
    // public GameObject food;
     public List<GameObject> list;
     bool startnext = true;
-    public float spawnWidth = 10;
+    private int spawnWidth = 7;
     // Start is called before the first frame update
-    
+    private int randomNum;
+
     void Start()
     {
-        
+// System.Random rng = new System.Random();
     }
     IEnumerator WaitToDrop()
     {
@@ -26,9 +28,12 @@ public class RandomSpawner : MonoBehaviour
 
         
         Vector3 spawnPosition = transform.position;
-        spawnPosition += new Vector3(Random.Range(-spawnWidth, spawnWidth), 0, 0);
+        int xpos = Random.Range(-spawnWidth, spawnWidth);
+        print(xpos);
+        spawnPosition += new Vector3(xpos, 0, 0);
+        
         GameObject copyfood = Instantiate(sprite, spawnPosition, Quaternion.identity);
-        //spawn.rotate(vector3.forward * -90f)
+        
         
 
         startnext = true;
