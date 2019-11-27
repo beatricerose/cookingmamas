@@ -1,4 +1,4 @@
-﻿Shader "Custom/WaveShader"
+﻿Shader "Custom/FluidShader"
 {
    
     Properties
