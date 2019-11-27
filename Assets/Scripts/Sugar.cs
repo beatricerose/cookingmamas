@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Sugar : MonoBehaviour
 {
     Text text;
-    public static int sugarAmount = 3;
+    public static int sugarAmount;
 
     void Start()
     {

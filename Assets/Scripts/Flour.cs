@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Flour : MonoBehaviour
 {
     Text text;
-    public static int flourAmount = 5;
+    public static int flourAmount;
 
     void Start()
     {

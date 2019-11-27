@@ -6,17 +6,27 @@ using UnityEngine.SceneManagement;
 public class RecipeManager : MonoBehaviour
 {
     public static RecipeManager instance;
+    public static Recipe cookie;
+    public static Recipe cake;
+    public static Recipe croissant;
+    public static Recipe[] recipeList;
 
     private void Awake()
     {
-        //cookieRecipe.Add(Ingredient.Butter, 2);
-        //instance = this;
+        instance = this;
+        cookie = new Recipe(3, 2, 1, 3);
+        cake = new Recipe(3, 2, 2, 5);
+        croissant = new Recipe(4, 1, 4, 2);
+        recipeList[0] = cookie;
+        recipeList[1] = cake;
+        recipeList[2] = croissant;
     }
 
     // Start is called before the first frame update --> can't call if not Singleton (all static)
     void Start()
     {
-       
+        //int index = SceneManager.GetActiveScene().buildIndex + 1;
+        SetRecipe(recipeList[1]);
     }
 
     // Update is called once per frame
@@ -60,8 +70,7 @@ public class RecipeManager : MonoBehaviour
         if (Flour.flourAmount == 0 && Sugar.sugarAmount == 0 && Butter.butterAmount == 0 && Chocolate.chocolateAmount == 0)
         {
             // run the animation, load next scene
-            // make spoon clickable? ie. toggle the kinetic to make it clickable
-            print("Works");
+            //print("Works");
         }
         else if(Flour.flourAmount < 0 || Sugar.sugarAmount < 0 || Butter.butterAmount < 0 || Chocolate.chocolateAmount < 0)
         {
