@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Collection : MonoBehaviour
 {
-    int speed = 5;
+    int speed = 15;
 
 
     void Start()
@@ -33,5 +33,6 @@ public class Collection : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         RecipeManager.FoodCollected(other);
+        Destroy(other.gameObject);
     }
 }
