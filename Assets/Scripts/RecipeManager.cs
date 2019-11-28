@@ -14,9 +14,9 @@ public class RecipeManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        cookie = new Recipe(3, 2, 1, 3);
-        cake = new Recipe(3, 2, 2, 5);
-        croissant = new Recipe(4, 1, 4, 2);
+        cookie = new Recipe(3, 2, 1, 3, 3);
+        cake = new Recipe(3, 2, 2, 5, 4);
+        croissant = new Recipe(4, 1, 4, 2, 2);
         recipeList[0] = cookie;
         recipeList[1] = cake;
         recipeList[2] = croissant;
@@ -45,11 +45,10 @@ public class RecipeManager : MonoBehaviour
         {
             Flour.flourAmount -= 1;
         }
-        /*else if (item.CompareTag("Egg"))
+        else if (item.CompareTag("Egg"))
         {
-            myEgg++;
+            Egg.eggAmount -= 1;
         }
-        */
         else if (item.CompareTag("Sugar"))
         {
             Sugar.sugarAmount -= 1;
@@ -67,12 +66,12 @@ public class RecipeManager : MonoBehaviour
            mySpecial++;
         }*/
 
-        if (Flour.flourAmount == 0 && Sugar.sugarAmount == 0 && Butter.butterAmount == 0 && Chocolate.chocolateAmount == 0)
+        if (Flour.flourAmount == 0 && Sugar.sugarAmount == 0 && Butter.butterAmount == 0 && Chocolate.chocolateAmount == 0 && Egg.eggAmount == 0)
         {
             // run the animation, load next scene
             //print("Works");
         }
-        else if(Flour.flourAmount < 0 || Sugar.sugarAmount < 0 || Butter.butterAmount < 0 || Chocolate.chocolateAmount < 0)
+        else if(Flour.flourAmount < 0 || Sugar.sugarAmount < 0 || Butter.butterAmount < 0 || Chocolate.chocolateAmount < 0 || Egg.eggAmount < 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -84,5 +83,6 @@ public class RecipeManager : MonoBehaviour
         Sugar.sugarAmount = myRecipe.sugar;
         Butter.butterAmount = myRecipe.butter;
         Chocolate.chocolateAmount = myRecipe.chocolate;
+        Egg.eggAmount = myRecipe.egg;
     }
 }
