@@ -8,15 +8,15 @@ public class Recipe
     public int sugar;
     public int butter;
     public int chocolate;
-    public int egg;
+    //public int egg;
 
-    public Recipe(int f, int s, int b, int c, int e)
+    public Recipe(int f, int s, int b, int c)
     {
         Flour.flourAmount = f;
         Sugar.sugarAmount = s;
         Butter.butterAmount = b;
         Chocolate.chocolateAmount = c;
-        Egg.eggAmount = e;
+        //Egg.eggAmount = e;
     }
 }
 
