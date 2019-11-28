@@ -13,6 +13,7 @@ TagManager:
   - Sugar
   - Butter
   - Peanut
+  - Table
   layers:
   - Default
   - TransparentFX

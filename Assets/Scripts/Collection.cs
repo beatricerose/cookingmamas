@@ -32,7 +32,11 @@ public class Collection : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        RecipeManager.FoodCollected(other);
-        Destroy(other.gameObject);
+        
+        if (!other.CompareTag("Table"))
+        {
+            RecipeManager.FoodCollected(other);
+            Destroy(other.gameObject);
+        }
     }
 }

@@ -10,9 +10,9 @@ public class TableCollider : MonoBehaviour
 		//{
 			//Destroy(other.gameObject);
 		//}
-        if (other.CompareTag("Flour"))
+        if (!other.CompareTag("Bowl"))
         {
-            Destroy(other.gameObject);
+           Destroy(other.gameObject);
         }
 	}
 }
