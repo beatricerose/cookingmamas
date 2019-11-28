@@ -6,27 +6,29 @@ using UnityEngine.SceneManagement;
 public class RecipeManager : MonoBehaviour
 {
     public static RecipeManager instance;
-    public static Recipe cookie;
-    public static Recipe cake;
-    public static Recipe croissant;
-    public static Recipe[] recipeList;
+    public static Recipe cookie = new Recipe(3, 2, 1, 3, 2);
+    public static Recipe cake = new Recipe(3, 2, 2, 5, 2);
+    public static Recipe brownie = new Recipe(3, 2, 1, 5, 2);
+    public static Recipe[] recipeList = { cookie, cake, brownie };
+    private static string[] cookingSceneList = { "CookieScene", "CakeScene", "BrownieScene"}; 
 
     private void Awake()
     {
         instance = this;
-        cookie = new Recipe(3, 2, 1, 3, 2);
-        cake = new Recipe(3, 2, 2, 5, 2);
-        croissant = new Recipe(4, 1, 4, 2, 2);
-        recipeList[0] = cookie;
-        recipeList[1] = cake;
-        recipeList[2] = croissant;
     }
 
     // Start is called before the first frame update --> can't call if not Singleton (all static)
     void Start()
     {
-        //int index = SceneManager.GetActiveScene().buildIndex + 1;
-        SetRecipe(recipeList[1]);
+        int index = 0;
+        for(int i=0; i<cookingSceneList.Length; i++)
+        {
+            if(cookingSceneList[i].Equals(SceneManager.GetActiveScene().name))
+            {
+                index = i;
+            }
+        }
+        SetRecipe(recipeList[index]);
     }
 
     // Update is called once per frame
