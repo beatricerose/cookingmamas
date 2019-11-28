@@ -8,7 +8,7 @@ public class TableCollider : MonoBehaviour
 	{
         if (!other.CompareTag("Bowl"))
 		{
-			Destroy(other);
+			Destroy(other.gameObject);
 		}
 	}
 }
