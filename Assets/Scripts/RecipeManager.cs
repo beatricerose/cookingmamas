@@ -16,7 +16,6 @@ public class RecipeManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        SetRecipe(recipeList[0]);
     }
 
     // Start is called before the first frame update --> can't call if not Singleton (all static)
