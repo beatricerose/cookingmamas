@@ -29,7 +29,7 @@ public class RandomSpawner : MonoBehaviour
         
         Vector3 spawnPosition = transform.position;
         int xpos = Random.Range(-spawnWidth, spawnWidth);
-        print(xpos);
+        //print(xpos);
         spawnPosition += new Vector3(xpos, 0, 0);
         
         GameObject copyfood = Instantiate(sprite, spawnPosition, Quaternion.identity);
