@@ -21,16 +21,16 @@ public class RecipeManager : MonoBehaviour
     // Start is called before the first frame update --> can't call if not Singleton (all static)
     void Start()
     {
-        //int index = 0;
-        //for (int i = 0; i < cookingSceneList.Length; i++)
-        //{
-        //    if (cookingSceneList[i].Equals(SceneManager.GetActiveScene().name))
-        //    {
-        //        index = i;
-        //    }
-        //}
-        //SetRecipe(recipeList[index]);
-    }
+		int index = 0;
+		for (int i = 0; i < cookingSceneList.Length; i++)
+		{
+			if (cookingSceneList[i].Equals(SceneManager.GetActiveScene().name))
+			{
+				index = i;
+			}
+		}
+		SetRecipe(recipeList[index]);
+	}
 
     // Update is called once per frame
     void Update()
