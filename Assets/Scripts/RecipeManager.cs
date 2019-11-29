@@ -16,21 +16,22 @@ public class RecipeManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        recipeDone = false;
+        int index = 0;
+        for (int i = 0; i < cookingSceneList.Length; i++)
+        {
+            if (cookingSceneList[i].Equals(SceneManager.GetActiveScene().name))
+            {
+                index = i;
+            }
+        }
+        SetRecipe(recipeList[index]);
     }
 
     // Start is called before the first frame update --> can't call if not Singleton (all static)
     void Start()
     {
-        recipeDone = false;
-		int index = 0;
-		for (int i = 0; i < cookingSceneList.Length; i++)
-		{
-			if (cookingSceneList[i].Equals(SceneManager.GetActiveScene().name))
-			{
-				index = i;
-			}
-		}
-		SetRecipe(recipeList[index]);
+      
 	}
 
     // Update is called once per frame
@@ -77,6 +78,7 @@ public class RecipeManager : MonoBehaviour
         }
         else if(Flour.flourAmount < 0 || Sugar.sugarAmount < 0 || Butter.butterAmount < 0 || Chocolate.chocolateAmount < 0 || Egg.eggAmount < 0)
         {
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
