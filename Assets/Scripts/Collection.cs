@@ -33,7 +33,7 @@ public class Collection : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         
-        if (!other.CompareTag("Table"))
+        if (!other.CompareTag("Table") && !other.CompareTag("Spoon"))
         {
             RecipeManager.FoodCollected(other);
             Destroy(other.gameObject);

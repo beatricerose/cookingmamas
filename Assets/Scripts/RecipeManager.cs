@@ -10,7 +10,8 @@ public class RecipeManager : MonoBehaviour
     public static Recipe cake = new Recipe(3, 2, 2, 5, 2);
     public static Recipe brownie = new Recipe(3, 2, 1, 5, 2);
     public static Recipe[] recipeList = { cookie, cake, brownie };
-    private static string[] cookingSceneList = { "CookieScene", "CakeScene", "BrownieScene"}; 
+    private static string[] cookingSceneList = { "CookieScene", "CakeScene", "BrownieScene"};
+    public static bool recipeDone;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class RecipeManager : MonoBehaviour
     // Start is called before the first frame update --> can't call if not Singleton (all static)
     void Start()
     {
+        recipeDone = false;
 		int index = 0;
 		for (int i = 0; i < cookingSceneList.Length; i++)
 		{
@@ -71,7 +73,7 @@ public class RecipeManager : MonoBehaviour
 
         if (Flour.flourAmount == 0 && Sugar.sugarAmount == 0 && Butter.butterAmount == 0 && Chocolate.chocolateAmount == 0 && Egg.eggAmount == 0)
         {
-            //run the animation, load next scene
+            recipeDone = true;
             //print("Works");
         }
         else if(Flour.flourAmount < 0 || Sugar.sugarAmount < 0 || Butter.butterAmount < 0 || Chocolate.chocolateAmount < 0 || Egg.eggAmount < 0)

@@ -5,15 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class Spoon : MonoBehaviour
 {
+    Collider myCollider;
+    
+
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        myCollider = GetComponent<Collider>();
+        myCollider.enabled = false;
     }
 
+    private void Update()
+    {
+        if (RecipeManager.recipeDone == true)
+        {
+            myCollider.enabled = true;
+        }
+    }
 
-     void OnMouseUp()
+    void OnMouseUp()
     {
 
         anim.SetTrigger("Active");
