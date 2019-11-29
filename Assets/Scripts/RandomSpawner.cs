@@ -8,7 +8,7 @@ public class RandomSpawner : MonoBehaviour
    // public GameObject food;
     public List<GameObject> list;
     bool startnext = true;
-    private int spawnWidth = 7;
+    private int spawnWidth = 5;
     // Start is called before the first frame update
     private int randomNum;
 
