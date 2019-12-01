@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1798f785925844bf68b5d3180ba0e34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  batterPrefab: {fileID: 2751837028547836579, guid: 4d324f99660af4d88bb9dfcae0bb4cf8,
+    type: 3}
