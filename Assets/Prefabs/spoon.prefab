@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 4461954111554562747}
   m_Layer: 0
   m_Name: spoon
-  m_TagString: Untagged
+  m_TagString: Spoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,7 @@ Transform:
   m_GameObject: {fileID: 8877398105487751741}
   m_LocalRotation: {x: 0.846768, y: 0.3046164, z: -0.1473026, w: 0.41048115}
   m_LocalPosition: {x: 5.188568, y: 0.80219495, z: -7.593385}
-  m_LocalScale: {x: 0.55043, y: 0.55043, z: 0.55043}
+  m_LocalScale: {x: 0.06880375, y: 0.06880376, z: 0.06880375}
   m_Children:
   - {fileID: 2668203132047465238}
   m_Father: {fileID: 0}

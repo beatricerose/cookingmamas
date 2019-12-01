@@ -9,7 +9,7 @@ public class Spoon : MonoBehaviour
     
 
     private Animator anim;
-    // Start is called before the first frame update
+    
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -29,7 +29,13 @@ public class Spoon : MonoBehaviour
     {
 
         anim.SetTrigger("Active");
+        StartCoroutine(WaitAnimate());
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
+    }
+
+    IEnumerator WaitAnimate()
+    {
+        yield return new WaitForSeconds(60f);
     }
 }
