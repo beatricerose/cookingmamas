@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class Collection : MonoBehaviour
 {
     int speed = 15;
-    public GameObject batterPrefab;
-
+   
+    
 
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -29,14 +29,7 @@ public class Collection : MonoBehaviour
             transform.Translate(-Vector3.left * speed * Time.deltaTime);
         }
 
-        if (RecipeManager.recipeDone == true)
-        {
-            Vector3 target = transform.position;
-            target.x += 1f;
-            target.y -= 1f;
-
-            Instantiate(batterPrefab, target, Quaternion.identity);
-        }
+        
 
     }
 
