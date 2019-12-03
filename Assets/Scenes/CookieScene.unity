@@ -2445,7 +2445,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1246
+  m_Name: pb_Mesh-25138
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2937,15 +2937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table
       objectReference: {fileID: 0}
-    - target: {fileID: 2078811156519404399, guid: ffd0d3a5316f24531827e9cd71954751,
-        type: 3}
-      propertyPath: m_TagString
-      value: Table
-      objectReference: {fileID: 0}
     - target: {fileID: 2078811156519404404, guid: ffd0d3a5316f24531827e9cd71954751,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.85
+      value: -9.8393
       objectReference: {fileID: 0}
     - target: {fileID: 2078811156519404404, guid: ffd0d3a5316f24531827e9cd71954751,
         type: 3}
@@ -2955,7 +2950,7 @@ PrefabInstance:
     - target: {fileID: 2078811156519404404, guid: ffd0d3a5316f24531827e9cd71954751,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.8
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 2078811156519404404, guid: ffd0d3a5316f24531827e9cd71954751,
         type: 3}

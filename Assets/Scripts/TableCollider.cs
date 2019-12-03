@@ -6,10 +6,7 @@ public class TableCollider : MonoBehaviour
 {
     void onCollisionEnter(Collider other)
 	{
-        //if (!other.CompareTag("Bowl"))
-		//{
-			//Destroy(other.gameObject);
-		//}
+        
         if (!other.CompareTag("Bowl"))
         {
            Destroy(other.gameObject);
