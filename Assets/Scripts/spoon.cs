@@ -29,7 +29,7 @@ public class Spoon : MonoBehaviour
     {
 
         anim.SetTrigger("Active");
-        StartCoroutine(WaitAnimate());
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
