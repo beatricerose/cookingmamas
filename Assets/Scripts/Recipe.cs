@@ -12,11 +12,11 @@ public class Recipe
 
     public Recipe(int f, int s, int b, int c, int e)
     {
-        Flour.flourAmount = f;
-        Sugar.sugarAmount = s;
-        Butter.butterAmount = b;
-        Chocolate.chocolateAmount = c;
-        Egg.eggAmount = e;
+        flour = f;
+        sugar = s;
+        butter = b;
+        chocolate = c;
+        egg = e;
     }
 }
 
