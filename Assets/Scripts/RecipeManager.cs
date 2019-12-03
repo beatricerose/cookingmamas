@@ -46,7 +46,7 @@ public class RecipeManager : MonoBehaviour
     {
         if (item.CompareTag("Peanut"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("DeathScene");
         }
         else if (item.CompareTag("Flour"))
         {
