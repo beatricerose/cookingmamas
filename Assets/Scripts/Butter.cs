@@ -18,4 +18,9 @@ public class Butter : MonoBehaviour
     {
         text.text = butterAmount.ToString();
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        
+    }
 }
