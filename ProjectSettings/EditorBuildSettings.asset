@@ -29,4 +29,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cake Cutscene.unity
     guid: 0eef9e9dff2e9431794d29c1ade50bb1
+  - enabled: 1
+    path: Assets/Scenes/DonutScene.unity
+    guid: a0222d4688d7c4569943b27a32f8da52
+  - enabled: 1
+    path: Assets/Scenes/Donut Cutscene.unity
+    guid: c06fbb0f15d7c4455867d2586e2e8683
+  - enabled: 1
+    path: Assets/Scenes/MacaronScene.unity
+    guid: 56e2d22622b3e4d47a393bc4b056bc06
+  - enabled: 1
+    path: Assets/Scenes/Macaron Cutscene.unity
+    guid: 60eb0ec626bca4da6b0e24cfee6bca0c
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 71520c308db7045e488a4cf2322b0d67
+  - enabled: 1
+    path: Assets/Scenes/DeathScene.unity
+    guid: be5ea4c56cc04497fba79ab21e16d767
   m_configObjects: {}
