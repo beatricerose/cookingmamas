@@ -34,8 +34,5 @@ public class Spoon : MonoBehaviour
         
     }
 
-    IEnumerator WaitAnimate()
-    {
-        yield return new WaitForSeconds(60f);
-    }
+    
 }
