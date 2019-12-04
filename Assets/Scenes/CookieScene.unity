@@ -1338,7 +1338,7 @@ PrefabInstance:
     - target: {fileID: 8877398105487751741, guid: 67b95e76cc18148a3a568837f1aeecd7,
         type: 3}
       propertyPath: m_Name
-      value: spoon
+      value: Spoon
       objectReference: {fileID: 0}
     - target: {fileID: 5578134002503796782, guid: 67b95e76cc18148a3a568837f1aeecd7,
         type: 3}
