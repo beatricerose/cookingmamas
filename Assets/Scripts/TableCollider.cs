@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TableCollider : MonoBehaviour
 {
-    void onCollisionEnter(Collider other)
+    void OnTriggerEnter(Collider other)
 	{
         
         if (!other.CompareTag("Bowl"))
