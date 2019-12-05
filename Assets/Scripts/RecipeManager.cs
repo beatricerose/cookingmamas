@@ -14,9 +14,13 @@ public class RecipeManager : MonoBehaviour
     public static Recipe[] recipeList = { cookie, cake, brownie, donut, macaron };
     private static string[] cookingSceneList = { "CookieScene", "CakeScene", "BrownieScene", "DonutScene", "MacaronScene"};
     public static bool recipeDone;
+    GameManager myGameManager;
 
     private void Awake()
     {
+        GameManager myGameManager = FindObjectOfType<GameManager>();
+        myGameManager.SetPrevScene(SceneManager.GetActiveScene().name);
+
         instance = this;
         recipeDone = false;
         int index = 0;
@@ -34,7 +38,7 @@ public class RecipeManager : MonoBehaviour
     void Start()
     {
        
-	}
+    }
 
     // Update is called once per frame
     void Update()
@@ -75,6 +79,7 @@ public class RecipeManager : MonoBehaviour
 
         if (Flour.flourAmount == 0 && Sugar.sugarAmount == 0 && Butter.butterAmount == 0 && Chocolate.chocolateAmount == 0 && Egg.eggAmount == 0)
         {
+           
             recipeDone = true;
             //print("Works");
         }
