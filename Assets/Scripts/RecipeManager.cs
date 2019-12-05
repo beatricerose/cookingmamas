@@ -14,12 +14,11 @@ public class RecipeManager : MonoBehaviour
     public static Recipe[] recipeList = { cookie, cake, brownie, donut, macaron };
     private static string[] cookingSceneList = { "CookieScene", "CakeScene", "BrownieScene", "DonutScene", "MacaronScene"};
     public static bool recipeDone;
-    GameManager myGameManager;
+    
 
     private void Awake()
     {
-        GameManager myGameManager = FindObjectOfType<GameManager>();
-        myGameManager.SetPrevScene(SceneManager.GetActiveScene().name);
+        
 
         instance = this;
         recipeDone = false;
