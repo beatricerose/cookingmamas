@@ -9,8 +9,8 @@ public class RecipeManager : MonoBehaviour
     public static Recipe cookie = new Recipe(3, 2, 1, 3, 2);
     public static Recipe cake = new Recipe(3, 2, 2, 5, 2);
     public static Recipe brownie = new Recipe(3, 2, 1, 5, 2);
-    public static Recipe donut = new Recipe(3, 3, 3, 0, 2);
-    public static Recipe macaron = new Recipe(4, 3, 0, 2, 6);
+    public static Recipe donut = new Recipe(3, 3, 3, 1, 2);
+    public static Recipe macaron = new Recipe(4, 3, 3, 2, 6);
     public static Recipe[] recipeList = { cookie, cake, brownie, donut, macaron };
     private static string[] cookingSceneList = { "CookieScene", "CakeScene", "BrownieScene", "DonutScene", "MacaronScene"};
     public static bool recipeDone;
