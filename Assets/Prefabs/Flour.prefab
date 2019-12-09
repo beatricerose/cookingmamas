@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3883698142372293005}
   - component: {fileID: 3272953868328774068}
-  - component: {fileID: 6677551922312971136}
   - component: {fileID: 475882233870423943}
   m_Layer: 0
   m_Name: Flour
@@ -50,18 +49,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6677551922312971136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3883698142372292992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce4ba78e54d1440a9abe171845e4aa4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &475882233870423943
 BoxCollider:
   m_ObjectHideFlags: 0
